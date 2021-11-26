@@ -21,6 +21,9 @@ class Query {
 
   static contains(String attribute, List<dynamic> value) =>
       _addQuery(attribute, 'contains', value);
+  
+  static search(String attribute, String value) =>
+      _addQuery(attribute, 'search', value);
 
   static String _addQuery(String attribute, String oper, dynamic value) => (value
           is List)
