@@ -201,7 +201,7 @@ class Database extends Service {
      /// provided.
      /// 
      ///
-     Future<models.AttributeFloat> createFloatAttribute({required String collectionId, required String key, required bool xrequired, String? min, String? max, String? xdefault, bool? array}) async {
+     Future<models.AttributeFloat> createFloatAttribute({required String collectionId, required String key, required bool xrequired, double? min, double? max, double? xdefault, bool? array}) async {
         final String path = '/database/collections/{collectionId}/attributes/float'.replaceAll('{collectionId}', collectionId);
 
         final Map<String, dynamic> params = {

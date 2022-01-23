@@ -24,10 +24,10 @@ class AttributeFloat {
         required this.type,
         required this.status,
         required this.xrequired,
-this.array,
-this.min,
-this.max,
-this.xdefault,
+        this.array,
+        this.min,
+        this.max,
+        this.xdefault,
     });
 
     factory AttributeFloat.fromMap(Map<String, dynamic> map) {
